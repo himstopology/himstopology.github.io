@@ -12,9 +12,14 @@ img {margin-bottom: -7px}
 .w3-row-padding img {margin-bottom: 12px}
 </style>
 <body>
-
+<script>
+	var mySidebar = document.getElementById("mySidebar")
+if(window.outerWidth>mySidebar.offsetWidth){
+	mySidebar.
+}
+</script>
 <!-- Sidebar -->
-<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;left: 76%;" id="mySidebar">
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;/*left: 76%;*/" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
     <i class="fa fa-remove"></i>
   </a>
@@ -97,7 +102,7 @@ function myFunction() {
 
 // Open and close sidebar
 function w3_open() {
-    document.getElementById("mySidebar").style.width = "25%";
+    document.getElementById("mySidebar").style.width = "100%";
     document.getElementById("mySidebar").style.display = "block";
 }
 
