@@ -6,17 +6,25 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <style>
 body,h1 {font-family: "Montserrat", sans-serif}
 img {margin-bottom: -7px}
 .w3-row-padding img {margin-bottom: 12px}
+@media print {
+    html, body {
+       display: none;  /* hide whole page */
+    }
+}
 </style>
 <body>
 <script>
-	var mySidebar = document.getElementById("mySidebar")
-if(window.outerWidth>mySidebar.offsetWidth){
-	mySidebar.
-}
+//	var mySidebar = document.getElementById("mySidebar")
+//if(window.outerWidth>mySidebar.offsetWidth){
+//}
+$.getJSON('//freegeoip.net/json/?callback=?', function(data) {
+  console.log(JSON.stringify(data, null, 2));
+});
 </script>
 <!-- Sidebar -->
 <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;/*left: 76%;*/" id="mySidebar">
